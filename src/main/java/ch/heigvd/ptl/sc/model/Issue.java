@@ -24,66 +24,70 @@ public class Issue {
         private String tag;
 	private Date   date;
         private String status;
+
+    public void setAuthor(User author) {
+        this.author = author;
+    }
+
+    public void setIssueType(IssueType issueType) {
+        this.issueType = issueType;
+    }
+
+    public void setGeoData(GeoData geoData) {
+        this.geoData = geoData;
+    }
+
+    public void setComment(Comment comment) {
+        this.comment = comment;
+    }
+
+    public void setDesc(String desc) {
+        this.desc = desc;
+    }
+
+    public void setTag(String tag) {
+        this.tag = tag;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public User getAuthor() {
+        return author;
+    }
+
+    public IssueType getIssueType() {
+        return issueType;
+    }
+
+    public GeoData getGeoData() {
+        return geoData;
+    }
+
+    public Comment getComment() {
+        return comment;
+    }
+
+    public String getDesc() {
+        return desc;
+    }
+
+    public String getTag() {
+        return tag;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public String getStatus() {
+        return status;
+    }
 	
-
-	protected List<String> roles;
-	
-	public String getFirstname() {
-		return desc;
-	}
-
-	public void setFirstname(String firstname) {
-		this.desc = firstname;
-	}
-
-	public String getLastname() {
-		return lastname;
-	}
-
-	public void setLastname(String lastname) {
-		this.lastname = lastname;
-	}
-
-	public String getPhone() {
-		return phone;
-	}
-
-	public void setPhone(String phone) {
-		this.phone = phone;
-	}
-
-	public String getId() {
-		return id;
-	}
-
-	public List<String> getRoles() {
-		return roles;
-	}
-
-	public void setRoles(List<String> roles) {
-		this.roles = roles;
-	}
-	
-	public boolean hasRole(String role) {
-		for (String userRole : roles) {
-			if (userRole.equals(role)) {
-				return true;
-			}
-		}
-		return false;
-	}
 }
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package ch.heigvd.ptl.sc.model;
 
-/**
- *
- * @author Florent
- */
-public class Issue {
-    
-}
